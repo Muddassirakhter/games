@@ -1,0 +1,67 @@
+/* Footer.css
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f1f1f1;
+    border-top: 1px solid #ccc;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 0.875rem;
+    color: #333;
+  }
+   */
+   /* General Footer Styles */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    /* background-color: #f7f3f3; */
+    border-top: 1px solid #ccc;
+    position: relative; /* Changed from fixed to relative for responsiveness */
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding is included in the total width */
+    margin-top: 20px;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 0.875rem;
+    color: #f1eeee;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 600px) {
+    .footer {
+      padding: 0.75rem; /* Reduced padding on smaller screens */
+    }
+  
+    .footer p {
+      font-size: 0.75rem; /* Smaller font size for smaller screens */
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .footer {
+      padding: 1rem; /* Standard padding for tablets and medium screens */
+    }
+  
+    .footer p {
+      font-size: 0.875rem; /* Standard font size for tablets and medium screens */
+    }
+  }
+  
+  /* For large screens like desktops */
+  @media (min-width: 1025px) {
+    .footer {
+      padding: 1rem 2rem; /* More padding on larger screens */
+    }
+  
+    .footer p {
+      font-size: 1rem; /* Larger font size for larger screens */
+    }
+  }
+  
